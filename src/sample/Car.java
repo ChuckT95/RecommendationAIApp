@@ -1,58 +1,49 @@
 package sample;
 
 public class Car {
-  private String Model;
-  //need to store picture
-  private String pictureUrl;
-  private String features;
-  private String size;
-  private String tier;
+
+  private String make;
+  private String model;
+  private String year;
+  private String image;
+
+  public String getMake() {
+    return make;
+  }
+
+  public void setMake(String make) {
+    this.make = make;
+  }
 
   public String getModel() {
-    return Model;
+    return model;
   }
 
   public void setModel(String model) {
-    Model = model;
+    this.model = model;
   }
 
-  public String getPictureUrl() {
-    return pictureUrl;
+  public String getYear() {
+    return year;
   }
 
-  public void setPictureUrl(String pictureUrl) {
-    this.pictureUrl = pictureUrl;
+  public void setYear(String year) {
+    this.year = year;
   }
 
-  public String getFeatures() {
-    return features;
+  public String getImage() {
+    return image;
   }
 
-  public void setFeatures(String features) {
-    this.features = features;
+  public void setImage(String image) {
+    this.image = image;
   }
 
-  public String getSize() {
-    return size;
+  public Car(String make, String model, String year, String image) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.image = image;
   }
 
-  public void setSize(String size) {
-    this.size = size;
-  }
-
-  public String getTier() {
-    return tier;
-  }
-
-  public void setTier(String tier) {
-    this.tier = tier;
-  }
-
-  public Car(String model, String pictureUrl, String features, String size, String tier) {
-    Model = model;
-    this.pictureUrl = pictureUrl;
-    this.features = features;
-    this.size = size;
-    this.tier = tier;
-  }
 }
