@@ -58,6 +58,9 @@ public class Car {
   public Car(String makeModelYear) {
     this.makeModelYear = makeModelYear;
     this.image = "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547";
+    this.car_make = null;
+    this.car_model = null;
+    this.car_year = null;
   }
 
   public Car(String car_make, String car_model, int car_year) {

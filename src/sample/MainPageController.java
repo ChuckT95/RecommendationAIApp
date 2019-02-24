@@ -1,6 +1,15 @@
 package sample;
 
+import com.recombee.api_client.RecombeeClient;
+import com.recombee.api_client.api_requests.AddDetailView;
+import com.recombee.api_client.api_requests.RecommendItemsToUser;
+import com.recombee.api_client.bindings.Recommendation;
+import com.recombee.api_client.bindings.RecommendationResponse;
+import com.recombee.api_client.exceptions.ApiException;
+import java.io.IOException;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -58,7 +67,7 @@ public class MainPageController {
   @FXML
   void onManualChoicePressed(){
     for(Car choice : General.list){
-      if(new Car(manualComboBox.getValue()).equals(choice)){
+      if(manualComboBox.getValue().equals(choice.getMakeModelYear())){
         carImage.setImage(new Image(choice.getImage()));
         carDesc.setText(choice.getMakeModelYear());
         General.displayedCar = choice;
@@ -76,11 +85,28 @@ public class MainPageController {
   }
 
   @FXML
-  void initialize() throws SQLException {
+  void initialize() throws SQLException, ApiException, ParseException, IOException {
 
-    //todo initialize recommended with AI
+    RecombeeClient client = new RecombeeClient("hertz", "OJcnyDcMwAP3iIhhrLST9pa31QFFfqXuzWV0m8T9VVpK6ZTcoOmju0ep7zwsPIMe");
+    RecommendationResponse recommendationResponse = client.send(new RecommendItemsToUser("25", 5));
+       client.send(new AddDetailView("2c169e575644d840838e", "xyz")
 
-    //General.displayedCar = recommended[i];
+            .setTimestamp(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2016-12-09 13:05:06") )
+
+
+            .setCascadeCreate(true));
+    System.out.println("\nRecommended items:");
+
+    for(Recommendation rec: recommendationResponse) System.out.println(rec.getId());
+    System.out.println("\nRecommended items:");
+    int j =0;
+    for(Recommendation rec: recommendationResponse){
+      Car car = new Car(rec.getId());
+      recommended[j++]=car;
+
+    }
+//    br.close();
+    General.displayedCar = recommended[0];
 
     General.fillCarList();
     for(Car now : General.list){
