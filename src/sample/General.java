@@ -1,5 +1,4 @@
 package sample;
-
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,8 +10,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+
 
 public class General {
   public static Car displayedCar;
@@ -20,6 +20,7 @@ public class General {
   }
 
   public static void screenChange(String newScreen, Node oldScreenroot) throws IOException {
+    try{
     Stage stage = new Stage();
     Parent root = FXMLLoader.load(General.class.getClassLoader().getResource(newScreen));
     Scene scene = new Scene(root);
@@ -30,32 +31,20 @@ public class General {
     stage.setMinHeight(scene.getHeight());
     stage = (Stage) oldScreenroot.getScene().getWindow();
 
-    stage.close();
-  }
-  public static void screenChange(String newScreen) throws IOException {
-    Stage stage = new Stage();
-    Parent root = FXMLLoader.load(General.class.getClassLoader().getResource(newScreen));
-    Scene scene = new Scene(root);
-    stage.setTitle("RecommendationApp");
-    stage.initModality(Modality.APPLICATION_MODAL);
-    stage.setScene(scene);
-    stage.show();
-
-    //prevents windows from being shrunk beyond interaction
-    stage.setMinWidth(scene.getWidth());
-    stage.setMinHeight(scene.getHeight());
-
-
-    stage.close();
+    stage.close();}catch(Exception e1){
+      e1.getCause();
+      e1.printStackTrace();
+    }
 
   }
+
   public static ArrayList<Car> list = new ArrayList();
   public static User currentUser;
   public static void fillCarList() throws SQLException {
     String url = "jdbc:sqlite:libs/Database/HackathonDB.db";
   Connection con = DriverManager.getConnection(url);
   Statement stmt = con.createStatement();
-  ResultSet rs = stmt.executeQuery("select * from Cars");
+  ResultSet rs = stmt.executeQuery("select * from Car");
 
 
   while(rs.next())

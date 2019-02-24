@@ -1,7 +1,10 @@
 package sample;
 
-import java.io.IOException;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -10,10 +13,28 @@ public class Main extends Application {
   }
 
   @Override
-  public void start(Stage stage) throws IOException {
+  public void start(Stage primaryStage)  {
+    try {
+      Stage stage = new Stage();
 
+      Parent root = FXMLLoader.load(Main.class.getClassLoader().getResource("sample/LoginPage2.fxml"));
 
-    General.screenChange("sample/HertzappLoginPage.fxml");
+      Scene scene = new Scene(root);
+
+      stage.setTitle("RecommendationApp");
+
+      stage.initModality(Modality.APPLICATION_MODAL);
+
+      stage.setScene(scene);
+
+      stage.show();
+
+      //Set minimum size of window
+      stage.setMinWidth(scene.getWidth());
+      stage.setMinHeight(scene.getHeight());
+    } catch(Exception e){
+    e.printStackTrace();
+    System.out.println(e.getCause());
+    }
   }
-
 }

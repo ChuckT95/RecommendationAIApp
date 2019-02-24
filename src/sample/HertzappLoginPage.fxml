@@ -8,57 +8,75 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
-
-<fx:root fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginPageController">
-   <children>
-      <GridPane layoutX="14.0" prefHeight="400.0" prefWidth="600.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.199951171875" minWidth="10.0" prefWidth="146.3999755859375" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.60000762939455" minWidth="10.0" prefWidth="264.80002441406253" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.60003662109375" minWidth="10.0" prefWidth="190.19998779296873" />
-        </columnConstraints>
-        <rowConstraints>
-            <RowConstraints maxHeight="318.4" minHeight="10.0" prefHeight="65.5999816894531" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="342.40000381469724" minHeight="10.0" prefHeight="274.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="303.59999694824216" minHeight="0.0" prefHeight="40.59998779296876" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="146.8" minHeight="10.0" prefHeight="39.00001220703126" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-               <children>
-                  <Label layoutY="12.0" prefHeight="18.0" prefWidth="217.0" text="username" textAlignment="RIGHT" />
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
-               <children>
-                  <Label layoutX="5.0" layoutY="5.0" prefHeight="18.0" prefWidth="134.0" text="password" textAlignment="RIGHT" />
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <children>
-                  <TextField fx:id="usernameField" layoutX="15.0" layoutY="5.0" prefHeight="26.0" prefWidth="242.0" />
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
-               <children>
-                  <TextField fx:id="passwordField" layoutX="14.0" layoutY="4.0" prefHeight="26.0" prefWidth="242.0" />
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
-               <children>
-                  <Button fx:id="loginButton" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#onLoginButtonPressed" prefHeight="26.0" prefWidth="145.0" text="LOGIN" />
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-               <children>
-                  <Label layoutX="24.0" layoutY="10.0" prefHeight="37.0" prefWidth="174.0" text="LOGIN PAGE" textAlignment="CENTER">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-         </children>
-      </GridPane>
-   </children>
+<fx:root xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+  minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane"
+  xmlns="http://javafx.com/javafx/10.0.1" fx:controller="sample.LoginPageController"
+  fx:id="root">
+  <children>
+    <GridPane layoutX="14.0" prefHeight="400.0" prefWidth="600.0">
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.199951171875" minWidth="10.0"
+          prefWidth="146.3999755859375"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.60000762939455" minWidth="10.0"
+          prefWidth="264.80002441406253"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.60003662109375" minWidth="10.0"
+          prefWidth="190.19998779296873"/>
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="318.4" minHeight="10.0" prefHeight="65.5999816894531"
+          vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="342.40000381469724" minHeight="10.0" prefHeight="274.0"
+          vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="303.59999694824216" minHeight="0.0"
+          prefHeight="40.59998779296876" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="146.8" minHeight="10.0" prefHeight="39.00001220703126"
+          vgrow="SOMETIMES"/>
+      </rowConstraints>
+      <children>
+        <AnchorPane GridPane.rowIndex="2" prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Label layoutY="12.0" prefHeight="18.0" prefWidth="217.0" text="username"
+              textAlignment="RIGHT"/>
+          </children>
+        </AnchorPane>
+        <AnchorPane GridPane.rowIndex="3" prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Label layoutX="5.0" layoutY="5.0" prefHeight="18.0" prefWidth="134.0" text="password"
+              textAlignment="RIGHT"/>
+          </children>
+        </AnchorPane>
+        <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2" prefHeight="200.0"
+          prefWidth="200.0">
+          <children>
+            <TextField layoutX="15.0" layoutY="5.0" prefHeight="26.0" prefWidth="242.0"
+              fx:id="usernameField"/>
+          </children>
+        </AnchorPane>
+        <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="3" prefHeight="200.0"
+          prefWidth="200.0">
+          <children>
+            <TextField layoutX="14.0" layoutY="4.0" prefHeight="26.0" prefWidth="242.0"
+              fx:id="passwordField"/>
+          </children>
+        </AnchorPane>
+        <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="2" prefHeight="200.0"
+          prefWidth="200.0">
+          <children>
+            <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#onLoginButtonPressed"
+              prefHeight="26.0" prefWidth="145.0" text="LOGIN" fx:id="loginButton"/>
+          </children>
+        </AnchorPane>
+        <AnchorPane GridPane.columnIndex="1" prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Label layoutX="24.0" layoutY="10.0" prefHeight="37.0" prefWidth="174.0"
+              text="LOGIN PAGE" textAlignment="CENTER">
+              <font>
+                <Font size="24.0"/>
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+      </children>
+    </GridPane>
+  </children>
 </fx:root>

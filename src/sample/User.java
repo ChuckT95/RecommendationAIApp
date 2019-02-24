@@ -106,7 +106,7 @@ public class User {
     String url = "jdbc:sqlite:libs/Database/HackathonDB.db";
     Connection conn = DriverManager.getConnection(url);
     Statement stmt = conn.createStatement();
-    ResultSet rs1 = stmt.executeQuery(String.format("select * from USER where username= %s and password = %s", username, password));
+    ResultSet rs1 = stmt.executeQuery(String.format("SELECT * FROM USER WHERE username = '%s' and password = '%s'", username, password));
     rs1.next();
     this.username=rs1.getString(1);
     this.password=rs1.getString(2);

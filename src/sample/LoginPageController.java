@@ -1,8 +1,5 @@
 package sample;
 
-import java.awt.event.ActionEvent;
-import java.io.IOException;
-import java.sql.SQLException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -25,13 +22,20 @@ public class LoginPageController {
 
 
   @FXML
-  void onLoginButtonPressed(ActionEvent event) throws IOException, SQLException {
-    String url = "jdbc:sqlite:libs/Database/HackathonDB.db";
-    String userlogin = usernameField.getText();
-    String passlogin = passwordField.getText();
+  public void onLoginButtonPressed(javafx.event.ActionEvent event) {
+    try {
 
-    General.currentUser =  new User(userlogin, passlogin);
-    General.screenChange("HertzappMainPage.fxml", root);
-  }
+      String userlogin = usernameField.getText();
+      String passlogin = passwordField.getText();
+
+      General.currentUser = new User(userlogin, passlogin);
+      General.screenChange("sample/HertzappMainPage.fxml", root);
+    }catch(Exception e){
+    e.printStackTrace();
+      System.out.println(e.getCause());}
+    }
+
+
+
 
 }
