@@ -4,7 +4,7 @@ public class Car {
 
   private String make;
   private String model;
-  private String year;
+  private int year;
   private String image;
 
   public String getMake() {
@@ -23,11 +23,11 @@ public class Car {
     this.model = model;
   }
 
-  public String getYear() {
+  public int getYear() {
     return year;
   }
 
-  public void setYear(String year) {
+  public void setYear(int year) {
     this.year = year;
   }
 
@@ -39,11 +39,17 @@ public class Car {
     this.image = image;
   }
 
-  public Car(String make, String model, String year, String image) {
+  public Car(String make, String model, int year, String image) {
     this.make = make;
     this.model = model;
     this.year = year;
     this.image = image;
   }
 
+  public Car(String make, String model, int year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.image=null;
+  }
 }
