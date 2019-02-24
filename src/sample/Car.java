@@ -6,6 +6,15 @@ public class Car {
   private String car_model;
   private int car_year;
   private String image;
+  private String makeModelYear;
+
+  public String getMakeModelYear() {
+    return makeModelYear;
+  }
+
+  public void setMakeModelYear(String makeModelYear) {
+    this.makeModelYear = makeModelYear;
+  }
 
   public String getCar_make() {
     return car_make;
@@ -46,10 +55,16 @@ public class Car {
     this.image = image;
   }
 
+  public Car(String makeModelYear) {
+    this.makeModelYear = makeModelYear;
+    this.image = "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547";
+  }
+
   public Car(String car_make, String car_model, int car_year) {
     this.car_make = car_make;
     this.car_model = car_model;
     this.car_year = car_year;
-    this.image = "libs/images/image-not-found.png";
+    this.makeModelYear = this.car_make + " " + this.car_model + " " + this.car_year;
+    this.image = "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547";
   }
 }

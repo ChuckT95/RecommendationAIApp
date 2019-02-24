@@ -44,7 +44,7 @@ public class MainPageController {
   public void OnPrevButtonPressed(javafx.event.ActionEvent event) {
     if(i==0){i=4;}else{i--;}
     carImage.setImage(new Image(recommended[i].getImage()));
-    carDesc.setText(recommended[i].getCar_make() + " : " + recommended[i].getCar_model() + " : " + recommended[i].getCar_year());
+    carDesc.setText(recommended[i].getMakeModelYear());
     General.displayedCar = recommended[i];
   }
 
@@ -57,10 +57,9 @@ public class MainPageController {
 
   @FXML
   void onManualChoicePressed(){
-    String[] split = manualComboBox.getValue().split("\\s+");
-    Car choice = new Car(split[0], split[1], Integer.parseInt(split[2]));
+    Car choice = new Car(manualComboBox.getValue());
     carImage.setImage(new Image(choice.getImage()));
-    carDesc.setText(choice.getCar_make() + " " + choice.getCar_model() + " " + choice.getCar_year());
+    carDesc.setText(choice.getMakeModelYear());
     General.displayedCar = choice;
   }
 
@@ -68,7 +67,7 @@ public class MainPageController {
   public void onViewNextButtonPressed(javafx.event.ActionEvent event) {
   if(i==4){i=0;}else{i++;}
     carImage.setImage(new Image(recommended[i].getImage()));
-    carDesc.setText(recommended[i].getCar_make() + " " + recommended[i].getCar_model() + " " + recommended[i].getCar_year());
+    carDesc.setText(recommended[i].getMakeModelYear());
     General.displayedCar = recommended[i];
   }
 
@@ -81,13 +80,14 @@ public class MainPageController {
 
     General.fillCarList();
     for(Car now : General.list){
-      list2.add(now.getCar_make() + " " + now.getCar_model() + " " + now.getCar_year());
+      list2.add(now.getMakeModelYear());
     }
     manualComboBox.setItems(FXCollections.observableArrayList(list2));
     carImage.setImage(new Image(/*recommended[i].getImage())*/"https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547"));
     carDesc.setText(/*recommended[i].getCar_make() + " : " + recommended[i].getCar_model() + " : " + recommended[i].getCar_year()*/"null");
 
   }
+
 
 
 
