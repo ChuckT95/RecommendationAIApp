@@ -2,33 +2,33 @@ package sample;
 
 public class Car {
 
-  private String make;
-  private String model;
-  private int year;
+  private String car_make;
+  private String car_model;
+  private int car_year;
   private String image;
 
-  public String getMake() {
-    return make;
+  public String getCar_make() {
+    return car_make;
   }
 
-  public void setMake(String make) {
-    this.make = make;
+  public void setCar_make(String car_make) {
+    this.car_make = car_make;
   }
 
-  public String getModel() {
-    return model;
+  public String getCar_model() {
+    return car_model;
   }
 
-  public void setModel(String model) {
-    this.model = model;
+  public void setCar_model(String car_model) {
+    this.car_model = car_model;
   }
 
-  public int getYear() {
-    return year;
+  public int getCar_year() {
+    return car_year;
   }
 
-  public void setYear(int year) {
-    this.year = year;
+  public void setCar_year(int car_year) {
+    this.car_year = car_year;
   }
 
   public String getImage() {
@@ -39,17 +39,17 @@ public class Car {
     this.image = image;
   }
 
-  public Car(String make, String model, int year, String image) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
+  public Car(String car_make, String car_model, int car_year, String image) {
+    this.car_make = car_make;
+    this.car_model = car_model;
+    this.car_year = car_year;
     this.image = image;
   }
 
-  public Car(String make, String model, int year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.image=null;
+  public Car(String car_make, String car_model, int car_year) {
+    this.car_make = car_make;
+    this.car_model = car_model;
+    this.car_year = car_year;
+    this.image = "libs/images/image-not-found.png";
   }
 }
