@@ -31,6 +31,28 @@ public class User {
     this.previous_rent_times = previous_rent_times;
   }
 
+  public User(String username, String password) throws SQLException {
+    String url = "jdbc:sqlite:libs/Database/HackathonDB.db";
+    Connection conn = DriverManager.getConnection(url);
+    Statement stmt = conn.createStatement();
+    ResultSet rs1 = stmt.executeQuery(String
+        .format("SELECT * FROM USER WHERE username = '%s' and password = '%s'", username,
+            password));
+    rs1.next();
+    this.username = rs1.getString(1);
+    this.password = rs1.getString(2);
+    this.id = rs1.getInt(3);
+    this.gender = rs1.getString(4);
+    this.state = rs1.getString(5);
+    this.car_make = rs1.getString(6);
+    this.car_model = rs1.getString(7);
+    this.car_year = rs1.getInt(8);
+    this.previous_rent_times = rs1.getInt(9);
+    rs1.close();
+    stmt.close();
+    conn.close();
+  }
+
   public String getUsername() {
     return username;
   }
@@ -101,24 +123,5 @@ public class User {
 
   public void setPrevious_rent_times(int previous_rent_times) {
     this.previous_rent_times = previous_rent_times;
-  }
-  public User(String username, String password) throws SQLException {
-    String url = "jdbc:sqlite:libs/Database/HackathonDB.db";
-    Connection conn = DriverManager.getConnection(url);
-    Statement stmt = conn.createStatement();
-    ResultSet rs1 = stmt.executeQuery(String.format("SELECT * FROM USER WHERE username = '%s' and password = '%s'", username, password));
-    rs1.next();
-    this.username=rs1.getString(1);
-    this.password=rs1.getString(2);
-    this.id=rs1.getInt(3);
-    this.gender=rs1.getString(4);
-    this.state=rs1.getString(5);
-    this.car_make=rs1.getString(6);
-    this.car_model=rs1.getString(7);
-    this.car_year=rs1.getInt(8);
-    this.previous_rent_times=rs1.getInt(9);
-    rs1.close();
-    stmt.close();
-    conn.close();
   }
 }

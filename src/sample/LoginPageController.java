@@ -20,7 +20,6 @@ public class LoginPageController {
   private AnchorPane root;
 
 
-
   @FXML
   public void onLoginButtonPressed(javafx.event.ActionEvent event) {
     try {
@@ -30,12 +29,11 @@ public class LoginPageController {
 
       General.currentUser = new User(userlogin, passlogin);
       General.screenChange("sample/HertzappMainPage.fxml", root);
-    }catch(Exception e){
-    e.printStackTrace();
-      System.out.println(e.getCause());}
+    } catch (Exception e) {
+      e.printStackTrace();
+      System.out.println(e.getCause());
     }
-
-
+  }
 
 
 }

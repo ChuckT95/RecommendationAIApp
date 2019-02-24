@@ -1,101 +1,101 @@
-id,gender,state,car_make,car_model,car_year,previous_rent_times
-1,Male,Texas,BMW,M3,1998,18
-2,Female,South Carolina,Chrysler,300,1999,30
-3,Female,Colorado,Honda,Accord,1992,61
-4,Male,Arkansas,Acura,Legend,1988,62
-5,Female,Texas,Isuzu,Amigo,1994,67
-6,Female,Connecticut,GMC,Yukon XL 2500,2007,53
-7,Female,Pennsylvania,Pontiac,Montana SV6,2005,61
-8,Female,District of Columbia,Audi,R8,2012,67
-9,Male,New York,Chevrolet,S10,1992,79
-10,Male,New York,Maserati,Quattroporte,2010,91
-11,Female,Kentucky,Ford,ZX2,2002,34
-12,Male,Pennsylvania,Porsche,911,1999,89
-13,Male,Alabama,Infiniti,G,2008,6
-14,Male,Florida,Land Rover,Freelander,2004,95
-15,Male,Texas,Nissan,Sentra,2012,16
-16,Female,California,Dodge,Grand Caravan,2007,45
-17,Male,North Carolina,BMW,3 Series,1999,71
-18,Female,Kentucky,Mercedes-Benz,SLK-Class,2011,92
-19,Male,Florida,Acura,Legend,1989,47
-20,Female,Florida,Suzuki,Samurai,1994,93
-21,Male,California,Bentley,Continental GTC,2009,20
-22,Male,Florida,Nissan,Frontier,2001,92
-23,Female,Florida,Mercury,Lynx,1986,6
-24,Male,Texas,Jeep,Wrangler,2001,59
-25,Female,New York,Toyota,Camry,2004,53
-26,Female,Oklahoma,Volvo,850,1995,29
-27,Female,Texas,Porsche,Boxster,2003,66
-28,Female,Oregon,Mazda,CX-7,2012,96
-29,Male,California,BMW,X6,2013,90
-30,Male,Tennessee,Ford,Escort,2002,48
-31,Male,Arizona,Chevrolet,Camaro,1995,72
-32,Female,Washington,Volkswagen,GTI,1991,35
-33,Male,Oklahoma,Subaru,Legacy,2010,13
-34,Male,Maryland,Chrysler,Town & Country,1998,12
-35,Male,Kentucky,Infiniti,G35,2006,29
-36,Female,California,GMC,Envoy,1998,8
-37,Male,Missouri,Maserati,Spyder,2003,11
-38,Female,Texas,Volkswagen,Touareg,2007,28
-39,Female,North Carolina,Volkswagen,New Beetle,2008,83
-40,Male,New York,Isuzu,Amigo,1994,44
-41,Female,Indiana,BMW,M5,2006,79
-42,Female,California,Pontiac,Fiero,1985,87
-43,Female,Alabama,Ford,Thunderbird,2006,41
-44,Female,California,Land Rover,Freelander,2005,56
-45,Male,Tennessee,Pontiac,Grand Prix,1971,88
-46,Female,Georgia,Isuzu,Stylus,1993,14
-47,Female,Michigan,Land Rover,Discovery,2000,80
-48,Female,Texas,Honda,CR-Z,2012,54
-49,Male,Tennessee,Toyota,Sequoia,2001,5
-50,Female,Wyoming,Acura,Legend,1987,15
-51,Male,Connecticut,Mazda,MX-5,2010,54
-52,Female,Tennessee,GMC,Envoy XL,2004,64
-53,Female,Oregon,Chevrolet,Express 2500,2005,47
-54,Male,Florida,Mitsubishi,Lancer,2006,14
-55,Male,Indiana,Saab,900,1992,71
-56,Female,Iowa,Chrysler,Concorde,2003,81
-57,Male,Illinois,Ford,Ranger,2004,8
-58,Male,District of Columbia,Cadillac,CTS-V,2011,5
-59,Female,Pennsylvania,Hummer,H3,2010,23
-60,Female,North Carolina,Nissan,240SX,1994,64
-61,Male,Indiana,Honda,Civic,2001,1
-62,Male,Florida,Hummer,H3,2010,93
-63,Male,Alabama,Toyota,Tacoma,2002,63
-64,Male,Georgia,Mercury,Montego,2006,94
-65,Male,Texas,Mitsubishi,Galant,1988,43
-66,Male,Idaho,Hyundai,Veloster,2012,67
-67,Female,Texas,GMC,Suburban 2500,1998,87
-68,Male,Virginia,Subaru,Legacy,2005,88
-69,Female,Florida,Saturn,L-Series,2000,5
-70,Male,Missouri,Volvo,S80,2010,28
-71,Female,Kansas,Land Rover,Discovery,1999,46
-72,Male,Texas,Chevrolet,Corvette,1965,82
-73,Female,California,Ford,F250,2008,5
-74,Female,California,Kia,Optima,2012,54
-75,Female,Florida,Mitsubishi,Montero,2002,74
-76,Male,Texas,Chrysler,Sebring,2002,35
-77,Male,Massachusetts,Buick,Century,1991,83
-78,Female,Florida,Mitsubishi,Eclipse,1996,31
-79,Female,New York,Ford,EXP,1986,32
-80,Male,Massachusetts,Chevrolet,Lumina,1992,53
-81,Male,Minnesota,Ford,Escape,2000,49
-82,Female,Illinois,Ford,Fiesta,2012,85
-83,Female,Louisiana,GMC,1500 Club Coupe,1997,4
-84,Female,Pennsylvania,Cadillac,XLR,2004,75
-85,Female,Kansas,Toyota,Avalon,2005,8
-86,Male,Georgia,Hyundai,Elantra,2012,79
-87,Female,Louisiana,Audi,Quattro,1993,87
-88,Male,Texas,Subaru,Outback,2010,7
-89,Female,District of Columbia,Lamborghini,Gallardo,2007,91
-90,Female,Arkansas,Ford,Tempo,1988,17
-91,Male,California,Suzuki,Swift,1989,96
-92,Male,Ohio,Mitsubishi,Galant,1993,98
-93,Female,District of Columbia,GMC,Jimmy,1995,13
-94,Male,Texas,BMW,3 Series,1992,83
-95,Female,Tennessee,Ford,E350,2012,67
-96,Male,Utah,Lexus,LS,1998,42
-97,Male,District of Columbia,Isuzu,Amigo,1994,93
-98,Female,Georgia,Oldsmobile,Bravada,1999,49
-99,Female,Florida,Buick,Rendezvous,2005,8
-100,Female,Indiana,Mercedes-Benz,CL-Class,2000,61
+id ,gender,state               ,car_make     ,car_model      ,car_year,previous_rent_times
+1  ,Male  ,Texas               ,BMW          ,M3             ,1998    ,18
+2  ,Female,South Carolina      ,Chrysler     ,300            ,1999    ,30
+3  ,Female,Colorado            ,Honda        ,Accord         ,1992    ,61
+4  ,Male  ,Arkansas            ,Acura        ,Legend         ,1988    ,62
+5  ,Female,Texas               ,Isuzu        ,Amigo          ,1994    ,67
+6  ,Female,Connecticut         ,GMC          ,Yukon XL 2500  ,2007    ,53
+7  ,Female,Pennsylvania        ,Pontiac      ,Montana SV6    ,2005    ,61
+8  ,Female,District of Columbia,Audi         ,R8             ,2012    ,67
+9  ,Male  ,New York            ,Chevrolet    ,S10            ,1992    ,79
+10 ,Male  ,New York            ,Maserati     ,Quattroporte   ,2010    ,91
+11 ,Female,Kentucky            ,Ford         ,ZX2            ,2002    ,34
+12 ,Male  ,Pennsylvania        ,Porsche      ,911            ,1999    ,89
+13 ,Male  ,Alabama             ,Infiniti     ,G              ,2008    ,6
+14 ,Male  ,Florida             ,Land Rover   ,Freelander     ,2004    ,95
+15 ,Male  ,Texas               ,Nissan       ,Sentra         ,2012    ,16
+16 ,Female,California          ,Dodge        ,Grand Caravan  ,2007    ,45
+17 ,Male  ,North Carolina      ,BMW          ,3 Series       ,1999    ,71
+18 ,Female,Kentucky            ,Mercedes-Benz,SLK-Class      ,2011    ,92
+19 ,Male  ,Florida             ,Acura        ,Legend         ,1989    ,47
+20 ,Female,Florida             ,Suzuki       ,Samurai        ,1994    ,93
+21 ,Male  ,California          ,Bentley      ,Continental GTC,2009    ,20
+22 ,Male  ,Florida             ,Nissan       ,Frontier       ,2001    ,92
+23 ,Female,Florida             ,Mercury      ,Lynx           ,1986    ,6
+24 ,Male  ,Texas               ,Jeep         ,Wrangler       ,2001    ,59
+25 ,Female,New York            ,Toyota       ,Camry          ,2004    ,53
+26 ,Female,Oklahoma            ,Volvo        ,850            ,1995    ,29
+27 ,Female,Texas               ,Porsche      ,Boxster        ,2003    ,66
+28 ,Female,Oregon              ,Mazda        ,CX-7           ,2012    ,96
+29 ,Male  ,California          ,BMW          ,X6             ,2013    ,90
+30 ,Male  ,Tennessee           ,Ford         ,Escort         ,2002    ,48
+31 ,Male  ,Arizona             ,Chevrolet    ,Camaro         ,1995    ,72
+32 ,Female,Washington          ,Volkswagen   ,GTI            ,1991    ,35
+33 ,Male  ,Oklahoma            ,Subaru       ,Legacy         ,2010    ,13
+34 ,Male  ,Maryland            ,Chrysler     ,Town & Country ,1998    ,12
+35 ,Male  ,Kentucky            ,Infiniti     ,G35            ,2006    ,29
+36 ,Female,California          ,GMC          ,Envoy          ,1998    ,8
+37 ,Male  ,Missouri            ,Maserati     ,Spyder         ,2003    ,11
+38 ,Female,Texas               ,Volkswagen   ,Touareg        ,2007    ,28
+39 ,Female,North Carolina      ,Volkswagen   ,New Beetle     ,2008    ,83
+40 ,Male  ,New York            ,Isuzu        ,Amigo          ,1994    ,44
+41 ,Female,Indiana             ,BMW          ,M5             ,2006    ,79
+42 ,Female,California          ,Pontiac      ,Fiero          ,1985    ,87
+43 ,Female,Alabama             ,Ford         ,Thunderbird    ,2006    ,41
+44 ,Female,California          ,Land Rover   ,Freelander     ,2005    ,56
+45 ,Male  ,Tennessee           ,Pontiac      ,Grand Prix     ,1971    ,88
+46 ,Female,Georgia             ,Isuzu        ,Stylus         ,1993    ,14
+47 ,Female,Michigan            ,Land Rover   ,Discovery      ,2000    ,80
+48 ,Female,Texas               ,Honda        ,CR-Z           ,2012    ,54
+49 ,Male  ,Tennessee           ,Toyota       ,Sequoia        ,2001    ,5
+50 ,Female,Wyoming             ,Acura        ,Legend         ,1987    ,15
+51 ,Male  ,Connecticut         ,Mazda        ,MX-5           ,2010    ,54
+52 ,Female,Tennessee           ,GMC          ,Envoy XL       ,2004    ,64
+53 ,Female,Oregon              ,Chevrolet    ,Express 2500   ,2005    ,47
+54 ,Male  ,Florida             ,Mitsubishi   ,Lancer         ,2006    ,14
+55 ,Male  ,Indiana             ,Saab         ,900            ,1992    ,71
+56 ,Female,Iowa                ,Chrysler     ,Concorde       ,2003    ,81
+57 ,Male  ,Illinois            ,Ford         ,Ranger         ,2004    ,8
+58 ,Male  ,District of Columbia,Cadillac     ,CTS-V          ,2011    ,5
+59 ,Female,Pennsylvania        ,Hummer       ,H3             ,2010    ,23
+60 ,Female,North Carolina      ,Nissan       ,240SX          ,1994    ,64
+61 ,Male  ,Indiana             ,Honda        ,Civic          ,2001    ,1
+62 ,Male  ,Florida             ,Hummer       ,H3             ,2010    ,93
+63 ,Male  ,Alabama             ,Toyota       ,Tacoma         ,2002    ,63
+64 ,Male  ,Georgia             ,Mercury      ,Montego        ,2006    ,94
+65 ,Male  ,Texas               ,Mitsubishi   ,Galant         ,1988    ,43
+66 ,Male  ,Idaho               ,Hyundai      ,Veloster       ,2012    ,67
+67 ,Female,Texas               ,GMC          ,Suburban 2500  ,1998    ,87
+68 ,Male  ,Virginia            ,Subaru       ,Legacy         ,2005    ,88
+69 ,Female,Florida             ,Saturn       ,L-Series       ,2000    ,5
+70 ,Male  ,Missouri            ,Volvo        ,S80            ,2010    ,28
+71 ,Female,Kansas              ,Land Rover   ,Discovery      ,1999    ,46
+72 ,Male  ,Texas               ,Chevrolet    ,Corvette       ,1965    ,82
+73 ,Female,California          ,Ford         ,F250           ,2008    ,5
+74 ,Female,California          ,Kia          ,Optima         ,2012    ,54
+75 ,Female,Florida             ,Mitsubishi   ,Montero        ,2002    ,74
+76 ,Male  ,Texas               ,Chrysler     ,Sebring        ,2002    ,35
+77 ,Male  ,Massachusetts       ,Buick        ,Century        ,1991    ,83
+78 ,Female,Florida             ,Mitsubishi   ,Eclipse        ,1996    ,31
+79 ,Female,New York            ,Ford         ,EXP            ,1986    ,32
+80 ,Male  ,Massachusetts       ,Chevrolet    ,Lumina         ,1992    ,53
+81 ,Male  ,Minnesota           ,Ford         ,Escape         ,2000    ,49
+82 ,Female,Illinois            ,Ford         ,Fiesta         ,2012    ,85
+83 ,Female,Louisiana           ,GMC          ,1500 Club Coupe,1997    ,4
+84 ,Female,Pennsylvania        ,Cadillac     ,XLR            ,2004    ,75
+85 ,Female,Kansas              ,Toyota       ,Avalon         ,2005    ,8
+86 ,Male  ,Georgia             ,Hyundai      ,Elantra        ,2012    ,79
+87 ,Female,Louisiana           ,Audi         ,Quattro        ,1993    ,87
+88 ,Male  ,Texas               ,Subaru       ,Outback        ,2010    ,7
+89 ,Female,District of Columbia,Lamborghini  ,Gallardo       ,2007    ,91
+90 ,Female,Arkansas            ,Ford         ,Tempo          ,1988    ,17
+91 ,Male  ,California          ,Suzuki       ,Swift          ,1989    ,96
+92 ,Male  ,Ohio                ,Mitsubishi   ,Galant         ,1993    ,98
+93 ,Female,District of Columbia,GMC          ,Jimmy          ,1995    ,13
+94 ,Male  ,Texas               ,BMW          ,3 Series       ,1992    ,83
+95 ,Female,Tennessee           ,Ford         ,E350           ,2012    ,67
+96 ,Male  ,Utah                ,Lexus        ,LS             ,1998    ,42
+97 ,Male  ,District of Columbia,Isuzu        ,Amigo          ,1994    ,93
+98 ,Female,Georgia             ,Oldsmobile   ,Bravada        ,1999    ,49
+99 ,Female,Florida             ,Buick        ,Rendezvous     ,2005    ,8
+100,Female,Indiana             ,Mercedes-Benz,CL-Class       ,2000    ,61

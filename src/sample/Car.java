@@ -8,6 +8,34 @@ public class Car {
   private String image;
   private String makeModelYear;
 
+  public Car(String car_make, String car_model, int car_year, String image) {
+    this.car_make = car_make;
+    this.car_model = car_model;
+    this.car_year = car_year;
+    this.image = image;
+  }
+
+  public Car(String makeModelYear) {
+    this.makeModelYear = makeModelYear;
+    this.image = "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547";
+    this.car_make = null;
+    this.car_model = null;
+    this.car_year = null;
+  }
+
+  public Car(String car_make, String car_model, int car_year) {
+    this.car_make = car_make;
+    this.car_model = car_model;
+    this.car_year = car_year;
+    this.makeModelYear = this.car_make + " " + this.car_model + " " + this.car_year;
+    this.image = "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547";
+    this.car_make = null;
+    this.car_model = null;
+    this.car_year = null;
+
+
+  }
+
   public String getMakeModelYear() {
     return makeModelYear;
   }
@@ -46,33 +74,5 @@ public class Car {
 
   public void setImage(String image) {
     this.image = image;
-  }
-
-  public Car(String car_make, String car_model, int car_year, String image) {
-    this.car_make = car_make;
-    this.car_model = car_model;
-    this.car_year = car_year;
-    this.image = image;
-  }
-
-  public Car(String makeModelYear) {
-    this.makeModelYear = makeModelYear;
-    this.image = "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547";
-    this.car_make = null;
-    this.car_model = null;
-    this.car_year = null;
-  }
-
-  public Car(String car_make, String car_model, int car_year) {
-    this.car_make = car_make;
-    this.car_model = car_model;
-    this.car_year = car_year;
-    this.makeModelYear = this.car_make + " " + this.car_model + " " + this.car_year;
-    this.image = "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547";
-    this.car_make = null;
-    this.car_model = null;
-    this.car_year = null;
-
-
   }
 }

@@ -9,40 +9,52 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
-
-<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainPageController">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+  minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1"
+  fx:controller="sample.MainPageController" fx:id="root">
   <children>
     <GridPane layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
       <columnConstraints>
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
       </columnConstraints>
       <rowConstraints>
-        <RowConstraints maxHeight="128.60001220703126" minHeight="3.0000061035156307" prefHeight="3.0000061035156307" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="263.79999389648435" minHeight="10.0" prefHeight="263.79999389648435" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="128.60001220703126" minHeight="3.0000061035156307"
+          prefHeight="3.0000061035156307" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="263.79999389648435" minHeight="10.0"
+          prefHeight="263.79999389648435" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
       </rowConstraints>
       <children>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+        <AnchorPane prefHeight="200.0" prefWidth="200.0"/>
+        <AnchorPane GridPane.rowIndex="2" prefHeight="200.0" prefWidth="200.0">
           <children>
-            <Button fx:id="viewCarButton" layoutX="247.0" layoutY="41.0" mnemonicParsing="false" onAction="#onViewCarButtonPressed" prefHeight="26.0" prefWidth="90.0" text="VIEW CAR" />
-            <Label fx:id="carDesc" layoutX="212.0" layoutY="1.0" prefHeight="34.0" prefWidth="150.0" text="CarDescription" />
-            <Button fx:id="manualChoiceButton" layoutX="470.0" layoutY="41.0" mnemonicParsing="false" onAction="#onManualChoicePressed" text="ManualCoice" />
-            <ComboBox fx:id="manualComboBox" layoutX="423.0" layoutY="2.0" prefWidth="150.0" promptText="manualComboBox" />
+            <Button layoutX="247.0" layoutY="41.0" mnemonicParsing="false" onAction="#onViewCarButtonPressed"
+              prefHeight="26.0" prefWidth="90.0" text="VIEW CAR"
+              fx:id="viewCarButton"/>
+            <Label layoutX="212.0" layoutY="1.0" prefHeight="34.0" prefWidth="150.0" text="CarDescription"
+              fx:id="carDesc"/>
+            <Button layoutX="470.0" layoutY="41.0" mnemonicParsing="false"
+              onAction="#onManualChoicePressed" text="ManualCoice" fx:id="manualChoiceButton"/>
+            <ComboBox layoutX="423.0" layoutY="2.0" prefWidth="150.0" promptText="manualComboBox"
+              fx:id="manualComboBox"/>
           </children>
         </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+        <AnchorPane GridPane.rowIndex="1" prefHeight="200.0" prefWidth="200.0">
           <children>
-            <Button fx:id="nextButton" layoutX="489.0" layoutY="120.0" mnemonicParsing="false" onAction="#onViewNextButtonPressed" prefHeight="54.0" prefWidth="62.0" text="NEXT" />
-            <Button fx:id="prevButton" layoutX="46.0" layoutY="120.0" mnemonicParsing="false" onAction="#OnPrevButtonPressed" prefHeight="54.0" prefWidth="62.0" text="PREV" />
-            <ImageView fx:id="carImage" fitHeight="265.0" fitWidth="345.0" layoutX="126.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="489.0" layoutY="120.0" mnemonicParsing="false" onAction="#onViewNextButtonPressed"
+              prefHeight="54.0" prefWidth="62.0" text="NEXT" fx:id="nextButton"/>
+            <Button layoutX="46.0" layoutY="120.0" mnemonicParsing="false" onAction="#OnPrevButtonPressed"
+              prefHeight="54.0" prefWidth="62.0" text="PREV" fx:id="prevButton"/>
+            <ImageView fitHeight="265.0" fitWidth="345.0" layoutX="126.0" layoutY="-1.0"
+              pickOnBounds="true" preserveRatio="true" fx:id="carImage"/>
           </children>
         </AnchorPane>
         <AnchorPane layoutX="10.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0">
           <children>
-            <Label layoutX="178.0" layoutY="6.0" prefHeight="42.0" prefWidth="311.0" text="CAR SELECTION PAGE" textAlignment="CENTER">
+            <Label layoutX="178.0" layoutY="6.0" prefHeight="42.0" prefWidth="311.0"
+              text="CAR SELECTION PAGE" textAlignment="CENTER">
               <font>
-                <Font size="24.0" />
+                <Font size="24.0"/>
               </font>
             </Label>
           </children>

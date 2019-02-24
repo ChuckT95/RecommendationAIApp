@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RecommendationAIApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RecommendationAIApp_jar</output-path>
+    <root id="archive" name="RecommendationAIApp.jar">
+      <element id="module-output" name="RecommendationAIApp" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/Database/sqlite-jdbc-3.23.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/Database/api-client-2.3.0.jar.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/Database/jackson-core-2.9.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/Database/okhttp-3.0.0-RC1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
