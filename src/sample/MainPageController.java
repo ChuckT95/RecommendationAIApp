@@ -57,10 +57,14 @@ public class MainPageController {
 
   @FXML
   void onManualChoicePressed(){
-    Car choice = new Car(manualComboBox.getValue());
-    carImage.setImage(new Image(choice.getImage()));
-    carDesc.setText(choice.getMakeModelYear());
-    General.displayedCar = choice;
+    for(Car choice : General.list){
+      if(new Car(manualComboBox.getValue()).equals(choice)){
+        carImage.setImage(new Image(choice.getImage()));
+        carDesc.setText(choice.getMakeModelYear());
+        General.displayedCar = choice;
+      }
+    }
+
   }
 
   @FXML
@@ -84,8 +88,12 @@ public class MainPageController {
     }
     manualComboBox.setItems(FXCollections.observableArrayList(list2));
     carImage.setImage(new Image(/*recommended[i].getImage())*/"https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547"));
-    carDesc.setText(/*recommended[i].getCar_make() + " : " + recommended[i].getCar_model() + " : " + recommended[i].getCar_year()*/"null");
-
+    carDesc.setText(/*recommended[i].getMakeModelYear*/"null");
+    General.list.get(0).setImage("https://cdn.bringatrailer.com/wp-content/uploads/2016/08/m3-bat-3-940x593.jpg");
+    General.list.get(1).setImage("https://static.cargurus.com/images/site/2009/11/15/21/45/1999_chrysler_300m_4_dr_std_sedan-pic-4715104499934606259-1600x1200.jpeg");
+    General.list.get(2).setImage("https://cdn04.carsforsale.com/3/263387/23381145/thumb/1129185428.jpg");
+    General.list.get(3).setImage("https://i.kinja-img.com/gawker-media/image/upload/s--yAPKfqds--/c_fill,f_auto,fl_progressive,g_center,h_675,q_80,w_1200/dbi2fte0e27yl0yobe2q.jpg");
+    General.list.get(4).setImage("https://www.google.com/search?q=isuzu+amigo+1994&client=firefox-b-1-d&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjHucmZydTgAhULm1kKHU0zBxQQ_AUIDigB&biw=1536&bih=790#imgrc=6GhKJbAyq6e42M:");
   }
 
 

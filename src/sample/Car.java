@@ -4,7 +4,7 @@ public class Car {
 
   private String car_make;
   private String car_model;
-  private int car_year;
+  private Integer car_year;
   private String image;
   private String makeModelYear;
 
@@ -66,5 +66,10 @@ public class Car {
     this.car_year = car_year;
     this.makeModelYear = this.car_make + " " + this.car_model + " " + this.car_year;
     this.image = "https://dubsism.files.wordpress.com/2017/12/image-not-found.png?w=547";
+    this.car_make = null;
+    this.car_model = null;
+    this.car_year = null;
+
+
   }
 }
